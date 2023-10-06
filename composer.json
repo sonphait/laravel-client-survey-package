@@ -1,0 +1,12 @@
+{
+    "name": "sonph/laravelsurveyjs",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sonphait\\Laravelsurveyjs\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
