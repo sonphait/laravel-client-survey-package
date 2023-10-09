@@ -19,12 +19,7 @@ class LaravelSurveyJsServiceProvider extends ServiceProvider
         $this->loadRoutesFrom(__DIR__.'/routes/api.php');
 
         // Publishing is only necessary when using the CLI.
-        if ($this->app->runningInConsole()) {
-
-            // Publishing the configuration file.
-
-            $this->definePublishable();
-        }
+        $this->definePublishable();
     }
 
     /**
@@ -61,10 +56,6 @@ class LaravelSurveyJsServiceProvider extends ServiceProvider
 
         $this->publishes([
            realpath(__DIR__.'/../resources/views') => resource_path('views/vendor/survey-manager'),
-        ]);
-
-        $this->publishes([
-            realpath(__DIR__.'/../resources/assets') => resource_path('views/vendor/survey-manager/assets'),
         ]);
 
         $this->publishes([

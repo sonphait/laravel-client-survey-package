@@ -1,8 +1,8 @@
 <?php
 
 namespace Sonphait\LaravelSurveyJs\app\Http\Controllers;
+use App\Http\Controllers\Controller;
 
-use Illuminate\Routing\Controller;
 use Sonphait\LaravelSurveyJs\app\Models\Survey;
 
 class SurveyController extends Controller
