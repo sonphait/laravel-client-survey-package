@@ -8,6 +8,6 @@ Route::group(
         'prefix'        =>  config('survey-manager.api_prefix'),
     ],
     function () {
-        Route::resource('/survey/{surveyId}/result', [SurveyResultAPIController::class, 'store']);
+        Route::post('/survey/{surveyId}/result', [SurveyResultAPIController::class, 'store']);
     }
 );
